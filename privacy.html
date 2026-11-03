@@ -12,57 +12,114 @@
 
     <p>
       Outlook Email Assistant is a human-in-the-loop assistant for reviewing
-      and organizing a user's authorized Outlook or Live.com mailbox.
+      and organizing a user's authorized Outlook or Live.com mailbox. This
+      policy explains what information may be accessed and how it is used
+      when the service is connected to a Microsoft account.
     </p>
 
     <h2>Information accessed</h2>
     <p>
-      When a user connects a Microsoft account, Outlook Email Assistant may
-      access mailbox information necessary to provide requested features,
-      including message identifiers, subjects, senders, received dates,
-      read status, and message previews.
+      When a user authorizes a Microsoft account, Outlook Email Assistant may
+      access mailbox information necessary to provide requested features.
+      Depending on the requested operation, this may include Microsoft account
+      profile information and email information such as message identifiers,
+      subjects, senders, received dates, read status, message previews, and
+      message content needed to retrieve or evaluate a selected message.
     </p>
 
     <h2>How information is used</h2>
     <p>
-      Mailbox information is used to perform user-requested functions such as
-      reviewing messages, identifying cleanup candidates, retrieving specific
-      messages, and verifying mailbox organization actions.
+      Information is used only to provide user-requested functionality, such
+      as confirming the connected Microsoft account, reviewing messages,
+      identifying cleanup candidates, retrieving specific messages, organizing
+      mailbox information, moving explicitly approved messages to Deleted
+      Items, and verifying those moves.
     </p>
 
-    <h2>Mailbox actions</h2>
+    <h2>Mailbox-changing actions</h2>
     <p>
       Outlook Email Assistant requires explicit user approval before moving a
       message to Deleted Items. The assistant does not permanently delete
       messages, empty Deleted Items, or send email.
     </p>
 
-    <h2>Authentication and third-party services</h2>
-    <p>
-      Authentication is handled through Auth0 and Microsoft authorization
-      services. Authorized mailbox operations are performed through Microsoft
-      services. These third-party services may process information according
-      to their own privacy policies.
-    </p>
-
-    <h2>Credentials</h2>
+    <h2>Authentication and authorization</h2>
     <p>
       Users should not provide Microsoft passwords directly to Outlook Email
-      Assistant. Account authorization occurs through the applicable secure
-      authentication and authorization flows.
+      Assistant. Authentication and authorization are performed through secure
+      OAuth-based authorization flows using Auth0 and Microsoft services.
+      Access is limited to permissions granted through those authorization
+      mechanisms.
+    </p>
+
+    <h2>Service providers and data recipients</h2>
+    <p>
+      Outlook Email Assistant relies on service providers necessary to operate
+      the service. These may include Microsoft for account authorization and
+      mailbox operations, Auth0 for authentication and authorization, Render
+      for hosting the MCP service, and OpenAI for the ChatGPT/plugin experience
+      through which users may interact with the service.
+    </p>
+
+    <p>
+      Information may be transmitted to these providers only as necessary to
+      authenticate users, process user-requested operations, operate the
+      service, maintain security, and return requested results. Those providers
+      may process information according to their own applicable terms and
+      privacy policies.
+    </p>
+
+    <h2>Sale and advertising</h2>
+    <p>
+      Outlook Email Assistant does not sell mailbox information or use mailbox
+      information for targeted advertising.
+    </p>
+
+    <h2>Data retention</h2>
+    <p>
+      Outlook Email Assistant is designed to access mailbox information as
+      needed to perform user-requested operations rather than to create an
+      independent permanent archive of mailbox contents. Service providers may
+      temporarily process or retain information, authentication records,
+      security records, or operational logs as necessary to provide, secure,
+      and troubleshoot their services and in accordance with their applicable
+      policies.
+    </p>
+
+    <h2>Authorization and deletion controls</h2>
+    <p>
+      Users may revoke connected-account authorization through applicable
+      Microsoft, Auth0, OpenAI, or connected-service controls. Revoking
+      authorization prevents future authorized mailbox access through that
+      connection.
+    </p>
+
+    <p>
+      Messages moved to Deleted Items remain subject to the user's Microsoft
+      mailbox controls and retention settings. Outlook Email Assistant does
+      not permanently erase those messages or empty the Deleted Items folder.
+    </p>
+
+    <h2>Security</h2>
+    <p>
+      Outlook Email Assistant uses authenticated connections and HTTPS-based
+      communications when interacting with supported services. Users should
+      never provide passwords, access tokens, refresh tokens, API secrets,
+      recovery codes, or other authentication secrets directly in chat.
     </p>
 
     <h2>User control</h2>
     <p>
-      Users control whether to connect their Microsoft account and whether to
-      approve mailbox-changing actions. Users may revoke connected-account
-      authorization through the applicable account or authorization settings.
+      Users control whether to connect a Microsoft account and whether to
+      approve mailbox-changing actions. Users should review proposed cleanup
+      actions before approving them.
     </p>
 
     <h2>Changes to this policy</h2>
     <p>
-      This privacy policy may be updated when the service or its data-handling
-      practices change. The current version will be published on this page.
+      This privacy policy may be updated when the service, its providers, or
+      its data-handling practices change. The current version will be
+      published on this page with an updated revision date.
     </p>
 
     <p>
